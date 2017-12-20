@@ -1,0 +1,63 @@
+header
+  padding-top 60px
+
+.navbar-toggler
+  position relative
+  border: none
+  &:focus,
+  &:active
+    outline: 0
+  & span
+    display: block
+    background-color: #444
+    height: 3px
+    width: 25px
+    margin-top: 4px
+    margin-bottom: 4px
+    transform: rotate(0deg)
+    position: relative
+    left: 0
+    opacity: 1
+
+.icon-bar
+  transition: all 0.2s
+
+.navbar-toggler .top-bar
+  transform: rotate(45deg)
+  transform-origin: 10% 10%
+
+.navbar-toggler .middle-bar
+  opacity: 0
+
+.navbar-toggler .bottom-bar
+  transform: rotate(-45deg)
+  transform-origin: 10% 90%
+
+.navbar-toggler
+  &.collapsed .top-bar
+    transform: rotate(0)
+
+  &.collapsed .middle-bar
+    opacity: 1
+
+  &.collapsed .bottom-bar
+    transform: rotate(0)
+
+.navbar-light .navbar-nav .nav-link
+  text-transform uppercase
+  font-size 0.875rem
+  font-family cabinbold
+  color white
+
+ul.navbar-nav
+  position relative
+
+  &:before
+    @extend .white-line
+    left: -40px
+    top: 13px
+
+  &:after
+    @extend .white-line
+    right: -40px
+    top: 13px

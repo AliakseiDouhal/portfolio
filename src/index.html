@@ -2,9 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 </head>
 <body>
+    <header id="header" class="fixed-top d-flex justify-content-center" >
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="responsive-navigation collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about me<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whatIDo">what i do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">my works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#talk">talk with me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--bg-header-->
+    <div class="bg-header d-flex flex-column justify-content-center  align-items-center">
+        <div class="container d-flex flex-column justify-content-center  align-items-center">
+            <h1>When was the last time you did something for the first time?</h1>
+            <button class="btn btn--transparent">
+                My works
+            </button>
+        </div>
+    </div>
 
+    <!--about me-->
+    <div id="about" class="about-me">
+        <div class="container ">
+            <div class="circle my-photo">
+                <img src="/">
+            </div>
+            <h2>Full Name</h2>
+            <p>front-end developer</p>
+            <ul class="d-flex justify-content-center">
+                <li >
+                    <a href="#" class="social-icons">
+                        <i class="icon-social-skype"></i>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="social-icons">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="social-icons">
+                        <i class="icon-social-vkontakte"></i>
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="social-icons">
+                        <i class="icon-social-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="location">In Minsk, Belarus </p>
+        </div>
+    </div>
+
+    <!--experience-->
+    <div id="whatIDo" class="experience">
+        <div class="container ">
+            <h2>Experience</h2>
+            <p class="subscription">There are many variations of passages of Lorem Ipsum available, but the majori believable.</p>
+            <ul class="perks d-flex justify-content-center">
+                <li class="perk">
+                    <div class="circle circle--green">
+                        <span class="technologies-img">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#1572B6" d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626 10.063-112.837h-110.48zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336-28.36 7.844v.001l-.022.019-28.311-7.888-1.917-21.739h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229 1.632-18.001h-32.282999999999994l-.277-3.043-.631-7.129-.331-3.828h34.748999999999995l1.264-14h-52.926l-.277-3.041-.63-7.131-.332-3.828h69.281l-.331 3.862z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-experience">
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </li>
+                <li class="perk">
+                    <div class="circle circle--green">
+                        <span class="technologies-img">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#F0DB4F" d="M2 1v125h125v-125h-125zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065-.001-10.115.046-20.188.046-30.188h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-experience">
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </li>
+                <li class="perk">
+                    <div class="circle circle--green">
+                        <span class="technologies-img">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#C4473A" d="M52.864 64h23.28l-12.375-25.877zM63.81 1.026l-59.257 20.854 9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635-59.637-20.485zm-15.766 73.974l-7.265 18.176-13.581.056 36.608-81.079-.07-.153h-.064l.001-.133.063.133h.14100000000000001l.123-.274v.274h-.124l-.069.153 38.189 81.417-13.074-.287-8.042-18.58-17.173.082"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-experience">
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--skills-->
+    <div class="skills">
+        <div class="container ">
+            <h2>Skills</h2>
+            <p class="subscription">There are many variations of passages of Lorem Ipsum available, but the majori believable.</p>
+            <div class="progress-box">
+                <h5>
+                    Lorem
+                    <span class="color-heading float-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+            <div class="progress-box">
+                <h5>
+                    Lorem
+                    <span class="color-heading float-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+            <div class="progress-box">
+                <h5>
+                    Lorem
+                    <span class="color-heading float-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+            <div class="progress-box">
+                <h5>Lorem
+                    <span class="color-heading float-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+            <div class="progress-box">
+                <h5>
+                    Lorem
+                    <span class="color-heading float-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--my works-->
+    <div id="works" class="my-works">
+        <div class="container ">
+            <h2>My works</h2>
+            <p class="subscription">There are many variations of passages of Lorem Ipsum available, but the majori believable.</p>
+            <div class="works row-wrap justify-content-between">
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="/">
+                        <img src="/">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
