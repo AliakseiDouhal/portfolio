@@ -9,7 +9,7 @@ header
     outline: 0
   & span
     display: block
-    background-color: #444
+    background-color: white
     height: 3px
     width: 25px
     margin-top: 4px
@@ -52,12 +52,32 @@ header
 ul.navbar-nav
   position relative
 
-  &:before
-    @extend .white-line
-    left: -40px
-    top: 13px
+.navbar-light .navbar-nav
+  & .active>.nav-link
+    color #7ae6c6
 
-  &:after
-    @extend .white-line
-    right: -40px
-    top: 13px
+  & .nav-link:hover
+    color: rgba(255, 255, 255, 0.56)
+
+.collapse.show
+  display: flex
+
+.collapsing
+  display flex
+
+@media only screen and (min-width: 768px)
+  ul.navbar-nav
+
+    &:before
+      @extend .white-line
+      left: -40px
+      top: 13px
+
+    &:after
+      @extend .white-line
+      right: -40px
+      top: 13px
+
+@media only screen and (max-width: 767px)
+  header
+    padding-top 10px

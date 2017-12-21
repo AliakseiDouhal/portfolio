@@ -1,6 +1,13 @@
 html
   font-size: 16px
 
+::selection
+  background: #7ae6c6
+  color white/* WebKit/Blink Browsers */
+
+::-moz-selection
+  background: #7ae6c6 /* Gecko Browsers */
+  color white
 body
   line-height 1.35
 
@@ -10,6 +17,7 @@ h2
   font-family: convergenceregular
   color: rgb(38, 192, 165)
   padding 70px 0 30px
+  margin-bottom 0
 
 ul
   padding-left 0
@@ -19,11 +27,13 @@ li
 
 a
   cursor pointer
+  &:hover
+    text-decoration none
 
 .container
   max-width: 1240px
   margin: auto
-  padding 0
+  padding 0 5%
   height 100%
 
 .subscription
@@ -40,23 +50,16 @@ a
   display flex
   flex-flow row wrap
 
-.white-line
-  content: ""
-  position: absolute
-  width: 35px
-  height: 2px
-  background-color: white
-
 .btn
   transition: background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out
 
 .social-icons
   width: 40px
   height: 40px
-  font-size: 1.125rem
+  font-size: 1.5rem
   color: #7ae6c6
   border-radius: 50%
-  padding: 11px
+  padding: 6px 11px
   transition-duration: .3s
   transition-property: all
   transition-timing-function: cubic-bezier(.7,1,.7,1)
@@ -67,3 +70,12 @@ a
     transition-duration: .3s
     transition-property: all
     transition-timing-function: cubic-bezier(.7,1,.7,1)
+
+@media only screen and (min-width: 768px)
+
+  .white-line
+    content: ""
+    position: absolute
+    width: 35px
+    height: 2px
+    background-color: white
