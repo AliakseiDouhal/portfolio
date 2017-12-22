@@ -30,6 +30,7 @@ var paths = {
     scripts: [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'node_modules/wowjs/dist/wow.min.js',
         'src/js/*.js'
     ],
     stylus: [
@@ -39,6 +40,7 @@ var paths = {
     ],
     css: [
         'node_modules/bootstrap/dist/css/bootstrap.css',
+        'node_modules/animate.css/animate.min.css',
         'src/styles/main.styl'
     ]
 };

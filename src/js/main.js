@@ -18,3 +18,9 @@ window.onscroll = function() {
         header.style.cssText="background-color: none;";
     }
 };
+var wow = new WOW(
+    {
+        offset: 50       // distance to the element when triggering the animation (default is 0)
+    }
+);
+wow.init();

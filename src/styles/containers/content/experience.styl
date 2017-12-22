@@ -9,11 +9,11 @@
     font-size 1.25rem
 
 .technologies-img
-  width 90px
-  height 90px
-  position absolute
-  top calc(50% - 45px)
-  left: calc(50% - 45px)
+  width: 54%
+  height: 54%
+  position: absolute
+  top: calc(50% - 27%)
+  left: calc(50% - 27%)
   path
     fill white
 
@@ -36,10 +36,19 @@
     border-color: #7ae6c6 transparent transparent transparent
 
 .perk
-  width 30%
+  width 100%
+  max-width 300px
 
 .text-experience
   p
     text-align center
     font-family cabinregular
     font-size 1rem
+
+@media only screen and (min-width: 767px) and (max-width: 1018px)
+  .perk
+    max-width 210px
+
+@media only screen and (min-width: 576px) and (max-width: 767px)
+  .perk
+    max-width 250px
